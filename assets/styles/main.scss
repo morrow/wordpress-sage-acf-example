@@ -1,0 +1,206 @@
+@import "common/variables";
+
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@import "common/global";
+@import "components/buttons";
+@import "components/comments";
+@import "components/forms";
+@import "components/grid";
+@import "components/wp-classes";
+@import "layouts/header";
+@import "layouts/sidebar";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/posts";
+@import "layouts/tinymce";
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+body {
+  font-family: 'Droid Sans';
+}
+
+main {
+  margin:0 auto;
+  float:none !important;
+  max-width:1300px;
+}
+
+header.banner {
+  padding:1.5em;
+  text-align:right;
+  .brand {
+    float:left;
+  }
+  .contact {
+    text-align:right;
+    font-weight:bold;
+    font-size:1.5em;
+    color:#ccc;
+    * {
+      margin:0;
+      padding:0;
+    }
+    .number {
+      color:black;
+    }
+  }
+}
+
+.front-page {
+  section {
+    padding:3em 0;
+  }
+}
+
+.page-header {
+  position:relative;
+  padding-right:0;
+  background:url(/wordpress/wp-content/uploads/2016/07/Hero-Image.jpg);
+  height:470px;
+  .contact-form {
+    background:#e6e6e6;
+    position:absolute;
+    top:30px;
+    right:45px;
+    width:370px;
+    border:1px solid #c1c3c2;
+    padding:1em;
+    text-align:center;
+    h2 {
+      margin:0.5em 0;
+      padding:0;
+    }
+    label {
+      display:block;
+      text-align:left;
+      margin:0.75em 1em;
+    }
+    input, textarea {
+      padding:0.5em;
+      width:90%;
+    }
+    .privacy-group {
+      text-align:left;
+      padding-left:15px;
+    }
+    #privacy, [for=privacy] {
+      display:inline-block;
+      width:auto;
+    }
+    [type=submit] {
+      background-color:#fd5d5d;
+      color:white;
+      font-size:1.25em;
+      border:none;
+      font-family:'Arial';
+      letter-spacing:1px;
+    }
+  }
+}
+
+.tagline {
+  font-size:3em;
+  text-align:center;
+  color:#666;
+}
+
+.column-group {
+  .column {
+    display:inline-block;
+    vertical-align:top;
+  }
+}
+
+.introduction {
+  padding-top:150px;
+  text-align:center;
+  h1 {
+    margin:1em;
+  }
+  .column {
+    text-align:left;
+    width:330px;
+    font-size:1.3em;
+    margin:0 1em;
+  }
+}
+
+.what-we-do {
+  text-align:center;
+  background:#e1f2f9;
+  padding:1em;
+  .column {
+    margin:1em;
+    width:300px;
+    text-align:left;
+  }
+}
+
+.contact-button {
+  margin:0 auto;
+  background-color:#fd5d5d;
+  color:white;
+  font-weight:bold;
+  font-size:1.5em;
+  border:none;
+  padding:0.75em 1em;
+  margin:1em;
+  font-family:'Arial';
+  letter-spacing:1px;
+}
+
+.more-information {
+  background:#8fdde9;
+  padding:1em;
+}
+
+.clients {
+  background:#e6e6e6;
+  img {
+    width:165px;
+    height:100px;
+    border:1px solid #818181;
+    margin:1em;
+  }
+}
+
+.about-us {
+  text-align:center;
+  h1 {
+    text-align:center;
+    color:#686868;
+  }
+  .column {
+    text-align:left;
+    margin:1em;
+    p {
+      &:first-child {
+        margin-top:1em;
+        padding-top:1em !important;
+      }
+      &:nth-child(9) {
+        margin-bottom:1em;
+        padding-bottom:1em !important;
+      }
+      margin:0;
+      padding:0 1em !important;
+      background: #e6e6e6;
+    }
+  }
+}
+
+.further-questions {
+  text-align:center;
+  background:#e1f2f9;
+}
+
+.footer-contact {
+  background:#595959;
+  color:#d7d7d7;
+  padding-left:2em !important;
+}
